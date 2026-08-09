@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",                // В какую версию JS компилировать
+    "module": "NodeNext",              // Используем современные ES-модули (import/export)
+    "moduleResolution": "NodeNext",    // Разрешение импортов как в Node.js
+    "lib": ["ES2022"],                 // Какие встроенные API доступны
+    "types": ["node"],
+
+    "rootDir": "./src",                // Где лежит исходный код
+    "outDir": "./dist",                // Куда складывать скомпилированный JS
+
+    "strict": true,                    // Включает все строгие проверки
+    "esModuleInterop": true,           // Упрощает импорт CommonJS-модулей
+    "skipLibCheck": true,              // Пропускает проверку типов в node_modules
+    "forceConsistentCasingInFileNames": true,
+
+    "resolveJsonModule": true,         // Позволяет импортировать .json файлы
+    
+    // "declaration": true,               // Генерирует .d.ts файлы с типами (библиотеки)
+    // "declarationMap": true,            // Карта для типов (библиотеки)
+    // "sourceMap": true                  // Карта кода для дебага (библиотеки)
+  },
+  "include": ["src/**/*.ts"],          // Какие файлы компилировать
+  "exclude": ["node_modules", "dist"]  // Какие игнорировать
+}
