@@ -1,7 +1,7 @@
 let num: number = 5;
 
 type valid = string | number;
-// console.log(num);
+console.log(`Variable: ${num}`);
 
 interface User{
     nickname: string,
