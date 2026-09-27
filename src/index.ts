@@ -1,7 +1,7 @@
-let num: number = 5;
+// let num: number = 5;
 
-type valid = string | number;
-console.log(`Variable: ${num}`);
+// type valid = string | number;
+// console.log(`Variable: ${num}`);
 
 // interface User{
 //     nickname: string,
@@ -9,7 +9,15 @@ console.log(`Variable: ${num}`);
 //     password: valid
 // }
 
-// console.log(num * 5)
+const greeting: string = "Привет! TypeScript и Node.js работают.";
+const port: number = 3000;
+
+console.log(greeting);
+console.log(`Текущее время: ${new Date().toLocaleTimeString()}`);
+
+console.log(`Версия Node.js: ${process.version}`);
+console.log(`Платформа: ${process.platform}`);
+
 import os from 'os';
 import math from './testMath.js';
 
